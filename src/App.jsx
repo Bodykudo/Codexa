@@ -37,7 +37,7 @@ function App() {
         href={fonts[store.fontStyle].src}
         crossOrigin="anonymous"
       />
-      <img src="logo.png" className="fixed top-4 w-28" />
+      <img src="logo.png" className="fixed top-12 w-28" />
       <CodeSnap targetRef={editorRef} isFull={fullEditor} />
       <ControlPanel targetRef={editorRef} setIsFull={setFullEditor} />
     </main>

@@ -26,7 +26,7 @@ function App() {
   }, []);
 
   return (
-    <main className="dark flex min-h-screen flex-col items-center justify-center bg-neutral-950 text-white">
+    <main className="dark flex min-h-screen flex-col items-center justify-center overflow-x-hidden bg-neutral-950 text-white">
       <link
         rel="stylesheet"
         href={themes[store.theme].theme}
@@ -37,7 +37,7 @@ function App() {
         href={fonts[store.fontStyle].src}
         crossOrigin="anonymous"
       />
-      <img src="logo.png" className="fixed top-12 w-28" />
+      <img src="logo.png" className="top-6 hidden w-24 lg:fixed lg:block" />
       <CodeSnap targetRef={editorRef} isFull={fullEditor} />
       <ControlPanel targetRef={editorRef} setIsFull={setFullEditor} />
     </main>
